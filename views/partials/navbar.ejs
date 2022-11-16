@@ -1,0 +1,35 @@
+<!--Autor: Cortez Ramirez Jose Kevyn
+    Fecha: Noviembre 2020 -->
+<!--views/partials/navbar.ejs -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+<a class = "navbar-brand" href="/">Site</a>
+<button class="navbar-toggler"type="button"data-toggle="collapse"
+  data-target="#navbarSupportedContent"aria-controls="navbarSupportedContent"
+  aria-expanded="false"aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse"id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+    <a class="nav-link"href="/">Home <spanclass="ssr-only">(current)</span>
+    </a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#"id="navbarDropdown"role="button"data-toggle="dropdown"
+aria-haspopup="true"aria-expanded="false">API's</a>
+<div class="dropdown-menu  "aria-labelledby="navbarDropdown">
+<a class="dropdown-item"href="/geolocalizacion">Geolocalización</a>
+<a class="dropdown-item"href="/redessociales">Redes sociales</a>
+<a class="dropdown-item"href="/ecommerce">E-commerce</a>
+<a class="dropdown-item"href="/streaming">Streaming</a>
+<div class="dropdown-divider"></div><a class="dropdown-item"href="/otra">Otra</a></div></li>
+<li class="nav-item"><a class="nav-link"href="/acercade">Acerca de Kevyn</a></li></ul>
+<li class="nav-item"></li><a class="nav-link" href="cliente" >Clientes</a>
+<li class="nav-item"></li><a class="nav-link" href="paquete" >Servicios contratados</a>
+<li class="nav-item"></li><a class="nav-link" href="servicio" >Paquetes funerarios</a>
+
+<form class="form-inline my-2 my-lg-0" action="/singup">
+  <input class="btn btn-outline-success my-2 my-sm-0"type="submit" value="Suscribirse" >
+</form>
+</div>
+</nav>

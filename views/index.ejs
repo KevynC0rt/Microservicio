@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+     
+    <%- include('partials/head'); %>
+  </head>
+  <body>
+    <%- include('partials/navbar'); %>
+
+      <div class="jumbotron"> 
+        <h1 class="display-4"> Bienvenido a mi pagina</h1>
+        <p class="lead"> Este es un ejemplo basico uso de algunas api's</p>
+        <hr class="my-4">
+        <script type="text/javascript" src="https://widgets-viewer.climacell.co/v1/sdk.js"></script>
+       
+      </div>
+      <div class="climacell-widget" data-apikey="rC4mRMsGhoajift8CAxidA9yyF6yyYAg" data-type="daily" data-location-name="Celaya, Gto., México" data-location-lon="-100.8112885" data-location-lat="20.5279612" data-size-mode="large" data-font-color="#000" data-background-color="#fff" data-font-family="verdana" data-weather-params="temp:C,precipitation:mm/hr,humidity:%" data-allow-users-enter-address="true" ></div>
+      <%- include('partials/script'); %>
+  </body>
+</html>

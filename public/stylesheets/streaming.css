@@ -1,0 +1,6 @@
+/* Autor: Cortez Ramirez Jose Kevyn
+    Fecha: Noviembre 2020*/
+.videos{
+    display:flex;
+    justify-content: space-around;
+}

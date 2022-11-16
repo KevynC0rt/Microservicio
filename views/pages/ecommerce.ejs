@@ -1,0 +1,44 @@
+<!--Autor: Cortez Ramirez Jose Kevyn
+    Fecha: Noviembre 2020 -->
+<!DOCTYPE html>
+<html>
+    <head> 
+        <%- include('../partials/head'); %>
+        <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.25/default/snipcart.css" />
+        <link rel="stylesheet" href="./stylesheets/ecommerce.css" />
+      </head>
+    <body >
+        <%- include('../partials/navbar'); %>
+        <div class="content">
+        <h1 class="titulo">E-Commerce</h1>
+        <div class="producto">
+          <H1 class="text"> cerveza Trooper Fear of the Dark</h1>
+            <p class="text">Precio: $79.99</p>
+          <div class="img" ><img src="/images/Trooper.png" width="160px" height="280px"/> </div>
+        <button class="snipcart-add-item" id="btn-comprar"
+  data-item-id="Trooper Fear of the Dark"
+  data-item-price=" 79.99"
+  data-item-url="./images/Trooper.png"
+  data-item-description="Trooper Fear of the Dark"
+  data-item-image="./images/Trooper.png"
+  data-item-name="Trooper Fear of the Dark"
+  data-item-custom1-name="Trooper Fear of the Dark"
+  data-item-custom1-type="Trooper Fear of the Dark"
+  data-item-custom1-value="Trooper Fear of the Dark">
+  Añadir al carrito 
+</button>
+</div>
+<hr color="yellow" size=3>
+          </div>
+
+
+
+
+          <script async src="https://cdn.snipcart.com/themes/v3.0.25/default/snipcart.js"></script>
+          <div hidden id="snipcart" data-api-key="OTk0ZmRmNTEtMGY2Mi00MWMwLWJlMTEtMTE4NjZlYTIzMzk3NjM3NDE0MzA5NjUzNzQ0MjU3"></div>
+        <%- include('../partials/script'); %>
+    </body>
+
+</html>
+
+

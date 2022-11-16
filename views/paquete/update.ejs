@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      <%=title%>
+    </title>
+    <link rel='stylesheet' href ='/stylesheets/style.css'/>
+    <link rel="stylesheet" type ="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+    <link rel="stylesheet" href ="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+    <% if(mensaje) { %>
+        <div class="alertalert-danger" role="alert">
+            <%- mensaje%>
+        </div>
+        <% } %>
+        <div class="card">
+            <div class="card-header">Modificando Servicio</div>
+            <div class="card-body">
+                <form action="/paquete/update"method="post">
+                    <div class="form-group">
+                        <label>ID cliente:</label>
+                        <input type="number"class="form-control"name="IDcliente"value="<%=IDcliente%>"autocomplete="off" required readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>ID paquete:</label>
+                        <input type="number"class="form-control"name="IDpaquete"value="<%=IDpaquete%>"autocomplete="off" required readonly>
+                    </div>
+                   
+                    <div class="form-group">
+                        <label>Adeudo:</label>
+                        <input type="number"class="form-control"name="Adeudo"value="<%=Adeudo%>"autocomplete="off" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Estatus</label>
+                        <select class="form-control"name="Estatus"value="<%=Estatus%>">
+                          <option>Adeudo</option>
+                          <option>Pagado</option>
+                          <option>Cancelado</option>
+                        </select>
+                      </div>
+                   
+                        <input type="submit"class="btn btn-info"
+                        value="Modificar"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"> </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"> </script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<script src="./javascripts/paquete.js"></script>
+</body>
+</html>
